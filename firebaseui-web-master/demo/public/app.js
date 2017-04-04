@@ -29,21 +29,21 @@ var uiConfig = {
   'signInFlow': 'popup',
   'signInOptions': [
     // TODO(developer): Remove the providers you don't need for your app.
-    {
-      provider: firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-      scopes: ['https://www.googleapis.com/auth/plus.login']
-    },
-    {
-      provider: firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-      scopes :[
-        'public_profile',
-        'email',
-        'user_likes',
-        'user_friends'
-      ]
-    },
-    firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-    firebase.auth.GithubAuthProvider.PROVIDER_ID,
+    // {
+    //   provider: firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+    //   scopes: ['https://www.googleapis.com/auth/plus.login']
+    // },
+    // {
+    //   provider: firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+    //   scopes :[
+    //     'public_profile',
+    //     'email',
+    //     'user_likes',
+    //     'user_friends'
+    //   ]
+    // },
+    // firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+    // firebase.auth.GithubAuthProvider.PROVIDER_ID,
     {
       provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
       // Whether the display name should be displayed in Sign Up page.
@@ -142,8 +142,8 @@ var deleteAccount = function() {
 var initApp = function() {
   // document.getElementById('sign-in-with-redirect').addEventListener(
   //     'click', signInWithRedirect);
-  document.getElementById('sign-in-with-popup').addEventListener(
-      'click', signInWithPopup);
+  // document.getElementById('sign-in-with-popup').addEventListener(
+  //     'click', signInWithPopup);
   document.getElementById('sign-out').addEventListener('click', function() {
     firebase.auth().signOut();
   });

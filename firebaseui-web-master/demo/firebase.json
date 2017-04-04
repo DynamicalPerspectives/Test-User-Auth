@@ -7,7 +7,7 @@
     "rewrites": [
       {
         "source": "/widget",
-        "destination": "/widget"
+        "destination": "/widget.html"
       },
       {
         "source": "**",

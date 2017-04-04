@@ -57,7 +57,7 @@ firebaseui.auth.OAuthResponse;
 /**
  * @define {string} The accountchooser.com client library URL.
  */
-var ACCOUNTCHOOSER_SRC = '//www.gstatic.com/accountchooser/client.js';
+// var ACCOUNTCHOOSER_SRC = '//www.gstatic.com/accountchooser/client.js';
 
 
 /**
